@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Formatação geral*/
+
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 48px;
+    background-color: rgb(26, 25, 25);
+    height: 56px;
+}
+
+header #img-logo {
+    width: 110px;
+}
+
+
+/*Navigation*/
+
+
+.menu-alternado {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all .6s;
+}
+
+.navigation ul li a:hover {
+    border-bottom: 2px solid blue;
+}
+
+/*main*/
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section .texto {
+    color: #000000;
+    line-height: 22px;
+}
+
+main section strong {
+    color: rgb(20, 190, 247);
+}
+
+main section ul li strong {
+    color: rgb(0, 60, 255);
+}
+
+main section .titulo {
+    color: rgb(0, 60, 255);
+}
+
+
+/*Section*/
+
+
+/*Apresentação*/
+#apresentacao {
+    background-color: #353536;
+    color: #fff;
+    padding: 40px;
+    height: 600px;
+}
+
+#titulo-apresentacao {
+    padding-top: 35px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    animation: typing 3s steps(40, end) infinite;
+    text-align: center;
+    font-size: 3em;
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+#detalhes-apresentacao {
+    margin-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#detalhes-apresentacao div {
+    margin-right: 20px;
+    width: 400px;
+}
+
+#texto-apresentacao,
+#subtitulo-apresentacao {
+    margin-left: 20px;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: left;
+}
+
+#subtitulo-apresentacao {
+    color: rgb(20, 190, 247);
+}
+
+#img-apresentacao {
+    width: 100%;
+    text-align: left;
+}
+
+
+/*Benefícios*/
+#beneficios {
+    color: #ecf0f1;
+    padding: 40px;
+}
+
+#img-beneficios {
+    max-width: 100%;
+}
+
+#lista-beneficios,
+#texto-sobre,
+#texto-contato {
+    margin-top: 30px;
+    text-align: justify;
+}
+
+#titulo-beneficios,
+#titulo-sobre,
+#titulo-contato {
+    font-size: 2em;
+}
+
+#lista-beneficios ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#lista-beneficios li {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    width: calc(50% - 15px);
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+#lista-beneficios li:hover::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Sobre*/
+#texto-sobre {
+    width: 720px;
+    text-align: justify;
+}
+
+#sobre {
+    background-color: #386aea;
+    color: #ecf0f1;
+    padding: 40px;
+}
+
+
+/*Contato*/
+#contato {
+    color: #ecf0f1;
+    padding: 40px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+form textarea,
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+form span {
+    color: #e74c3c;
+    font-size: 0.9em;
+}
+
+button.btn,
+button.btn-danger {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button.btn {
+    background-color: #3498db;
+    color: #fff;
+}
+
+button.btn:hover {
+    background-color: #2980b9;
+}
+
+button.btn-danger {
+    background-color: #e31f1f;
+    color: #fff;
+}
+
+button.btn-danger:hover {
+    background-color: #ff0000aa;
+}
+
+
+/*Footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/*Loading*/
+.carregamento-sobreposicao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.carregamento-mensagem {
+    font-size: 20px;
+}
+
+.notification {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.success {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.error {
+    background-color: #f44336;
+    color: #fff;
+}
+
+
+/*Responsividade*/
+@media only screen and (max-width: 768px) {
+
+    header {
+        display: flex;
+        padding: 15px 24px;
+        justify-content: flex-start;
+
+    }
+
+    #img-logo {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    /*Navigation*/
+    .navigation {
+        display: none;
+    }
+
+    .menu-alternado {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .linha {
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu-alternado:hover .linha{
+        background-color: #c2b9b9;
+    }
+
+    .menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        background-color: #1f1c1c;
+        padding: 50px 20px;
+        transition: all 0.3s ease;
+        z-index: 9999;
+    }
+
+    .menu.ativar {
+        left: 0;
+    }
+
+    .menu ul li {
+        margin-bottom: 20px;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        border-bottom: 2px solid transparent;
+        transition: all .6s;
+    }
+
+    .menu ul li a:hover {
+        border-bottom: 2px solid blue;
+    }
+
+    .btn-fechar {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .btn-fechar:hover {
+        color: #c2b9b9;
+    }
+
+
+    /*Main*/
+
+    /*Section*/
+    main section {
+        padding: 20px;
+    }
+
+    /*Apresentação*/
+    #apresentacao {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    #titulo-apresentacao {
+        font-size: 1.7em;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0;
+        animation: typing 2s steps(20, end) infinite;
+        text-align: center;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    #detalhes-apresentacao {
+        flex-direction: column;
+    }
+
+    #detalhes-apresentacao div {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #img-apresentacao {
+        width: 100%;
+    }
+
+
+    /*Benefícios*/
+    #lista-beneficios ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    #lista-beneficios li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #lista-beneficios li::before {
+        width: 100%;
+        white-space: normal;
+        text-align: left;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 25px;
+        margin-bottom: 20px;
+    }
+
+    #img-beneficios {
+        width: 100%;
+    }
+
+    /*Sobre*/
+    #texto-sobre {
+        width: 100%;
+    }
+
+
+    /*Contato*/
+    form {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    form label,
+    form textarea,
+    form input {
+        width: 100%;
+    }
+
+
+}

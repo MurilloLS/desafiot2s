@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page - Serviço T2S</title>
+</head>
+
+<body>
+
+    <header>
+        
+        <nav class="menu">
+            <button class="btn-fechar">X</button>
+            <ul class="escolha">
+                <li ><a href="#apresentacao">INÍCIO</a></li>
+                <li><a href="#beneficios">BENEFÍCIOS</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+        <div class="menu-alternado">
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+        </div>
+        <a href="https://www.t2s.com.br/home"><img src="img/logo.png" alt="img-logo" id="img-logo"></a>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#apresentacao">INÍCIO</a></li>
+                <li><a href="#beneficios">BENEFÍCIOS</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="apresentacao">
+            <h2 id="titulo-apresentacao">Transforme Seu Negócio com a <strong>T2S</strong></h2>
+            <div id="detalhes-apresentacao">
+                <div>
+                    <a href="#"><img src="img/servico.png" alt="img-apresentacao" id="img-apresentacao"></a>
+                </div>
+                <div>
+                    <h3 id="subtitulo-apresentacao">Conteinerização e Orquestração</h3>
+                    <p id="texto-apresentacao">
+                        O mundo dos negócios está cada vez mais impulsionado pela agilidade tecnológica e
+                        eficiência operacional, e a T2S está aqui para guiá-lo nessa jornada. Ao integrar
+                        conteinerização e orquestração de forma impecável, proporcionamos soluções especializadas
+                        que capacitam sua empresa a responder rapidamente às demandas do mercado, garantindo uma
+                        operação eficiente e escalável.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios">
+            <h2 id="titulo-beneficios" class="titulo">Benefícios de Conteinerização e Orquestração</h2>
+            <div class="conteiner">
+                <div id="lista-beneficios">
+                    <ul>
+                        <li id="b1" data-text="Separação de ambientes para evitar interferências."><strong>Isolamento de
+                                Aplicações</strong></li>
+                        <li id="b2" data-text="Capacidade de executar em diferentes ambientes sem modificações.">
+                            <strong>Portabilidade</strong>
+                        </li>
+                        <li id="b3" data-text="Capacidade de aumentar ou reduzir recursos conforme demanda.">
+                            <strong>Escalabilidade</strong>
+                        </li>
+                        <li id="b4" data-text="Rapidez na criação e implementação de soluções."><strong>Agilidade no
+                                Desenvolvimento</strong></li>
+                        <li id="b5" data-text="Facilidade na administração e controle."><strong>Gerenciamento
+                                Simplificado</strong></li>
+                        <li id="b6" data-text="Uso otimizado de recursos disponíveis."><strong>Eficiência de
+                                Recursos</strong></li>
+                        <li id="b7" data-text="Simplicidade para realizar correções e updates."><strong>Facilidade de
+                                Manutenção e Atualização</strong></li>
+                        <li id="b8" data-text="Proteção contra ameaças e garantia da integridade dos dados.">
+                            <strong>Segurança</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="img/beneficio.png" alt="img-beneficios" id="img-beneficios">
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2 id="titulo-sobre">Sobre a T2S</h2>
+            <p id="texto-sobre">
+                A T2S tem sido um pilar em desenvolvimento de sistemas sob demanda desde 2003. Com um forte DNA
+                acadêmico
+                desde nossa fundação, nos esforçamos para captar os melhores talentos e criar equipes de alta
+                performance. Nossa
+                cultura promove uma comunicação aberta e colaborativa, o que estimula a criatividade e a inovação.
+                Utilizamos metodologias ágeis e design thinking para estruturar nossos processos, alinhando-nos com
+                nossa missão de
+                entregar soluções tecnológicas com excelência e simplicidade. O resultado? Um time que entrega 100% dos
+                projetos, não importa quão desafiadores sejam. Venha descobrir como podemos resolver seus desafios
+                tecnológicos.
+            </p>
+        </section>
+
+        <section id="contato">
+            <h2 id="titulo-contato" class="titulo">Experimente Agora!</h2>
+            <p class="texto" id="texto-contato">Transforme sua empresa hoje mesmo. Preencha o formulário abaixo para
+                obter mais
+                informações.</p>
+
+            <form id="formulario">
+                <label for="nome">Nome Completo<span class="required">*</span>:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Informe seu nome completo"
+                    pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+">
+
+                <label for="email">E-mail<span class="required">*</span>:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite um e-mail válido"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+
+                <label for="telefone">Telefone<span class="required">*</span>:</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="Informe um número de telefone"
+                    pattern="[0-9()+-]+">
+
+                <label for="empresa">Nome da empresa<span class="required">*</span>:</label>
+                <input type="text" id="empresa" name="empresa" required placeholder="Digite o nome da sua empresa"
+                    pattern="[0-9A-Za-zÀ-ÖØ-öø-ÿ\s]+">
+
+                <label for="proposito">Propósito do Interesse<span class="required">*</span>:</label>
+                <textarea id="proposito" name="proposito" rows="4" required
+                    placeholder="Descreva o propósito do seu interesse" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+"></textarea>
+
+                <button type="reset" class="btn-danger">Limpar</button>
+                <button type="submit" class="btn">Enviar</button>
+
+                <div class="carregamento-sobreposicao" id="carregamentoSobreposicao" style="display: none;">
+                    <div class="carregamento-mensagem">Enviando...</div>
+                </div>
+                <div id="notificacoes"></div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 T2S - Transformando Empresas</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
