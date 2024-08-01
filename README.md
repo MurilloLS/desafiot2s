@@ -58,6 +58,6 @@ Contribuições são bem-vindas! Para contribuir com este projeto, siga estas et
 Por favor, certifique-se de atualizar os testes conforme apropriado.
 
 ---
-Feito com ☕ e ❤️ por [Murillo](https://github.com/MurilloLS)
+Feito com ☕ por [Murillo](https://github.com/MurilloLS)
 
 
